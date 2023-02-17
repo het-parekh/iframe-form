@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Form Design</title>
+</head>
+<body>
+    <form class="main-form" onsubmit="validateForm(event)">
+        <div class="form-header">Can you please provide you personal details?</div>
+        <div class="wrap-input">
+            <label for="name">Name</label>
+            <input id="name" />
+        </div>
+        <div class="wrap-input">
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" />
+        </div>
+        <div class="wrap-input">
+            <label for="mobile" >Contact Number</label>
+            <input id="mobile" />
+        </div>
+        <div class="wrap-input">
+            <label for="country">Country</label>
+            <select id="country" onchange="getStates()">
+                <option  value="" selected disabled hidden>Select Country</option>
+            </select>
+        </div>
+        <div class="wrap-input">
+            <label for="state">State</label>
+            <select  id="state">
+                <option value="" selected disabled hidden>Select State</option>
+            </select>
+        </div>
+        <div class="wrap-input">
+            <label for="email">Your email</label>
+            <input id="email"  />
+        </div>
+        <div class="wrap-btn">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</body>
+<script src="./form.js"></script>
+</html>

@@ -1,0 +1,11 @@
+.i-form{
+    margin: auto;
+    margin-bottom: 30px;
+    display: block; 
+    width: 400px;
+    border: none;
+    height: 600px;
+}
+.results{
+        text-align: center;
+}
