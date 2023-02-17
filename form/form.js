@@ -44,7 +44,9 @@ const getStates = async () => {
 var message
 //Getting Parent window data
 window.addEventListener('message', function (e) {
-    message = JSON.parse(e.data);
+    if(e.origin === 'https://iframe-form-validation.onrender.com' && e.data){
+        message = JSON.parse(e.data);
+    }
 });
 
 //form validation
@@ -91,5 +93,5 @@ const validateForm = (e) => {
     if(Object.keys(result).length === 0){
         result = {Success:"All fields are valid"}
     }
-    window.parent.postMessage(JSON.stringify(result),'*')
+    window.parent.postMessage(JSON.stringify(result),'https://iframe-form-validation.onrender.com')
 }

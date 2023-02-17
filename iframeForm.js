@@ -30,12 +30,10 @@ window.onload = (e) => {
 }
 
 window.addEventListener('message', function (e) {
-        if(typeof e.data === 'string'){
+        if(e.origin === 'https://simple-form.onrender.com' && e.data){
             let resultsDiv = document.getElementById('results')
             resultsDiv.innerHTML = 'Result: ' +e.data
-        }
-        
-
+        }     
 });
 
 
