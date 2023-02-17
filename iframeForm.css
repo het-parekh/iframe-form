@@ -8,4 +8,6 @@
 }
 .results{
         text-align: center;
+        width: 90%;
+        margin:auto;
 }

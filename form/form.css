@@ -1,9 +1,9 @@
 .main-form{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 250px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 20px;
+    padding: 10px;
     row-gap: 20px;
     background:#ECECEC;
     height: 550px;
