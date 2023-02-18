@@ -20,7 +20,7 @@
     border-radius: 2px;
 }
 .wrap-input>select{
-    color: #cccccc;
+    color: grey;
 }
 .wrap-input>label{
     font-weight: bold;
